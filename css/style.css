@@ -1,0 +1,287 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+.center{
+	width: 100%;
+	max-width: 1240px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+/*HEADER********************************************************/
+header{
+	display: flex;
+	width: 100%;
+	height: 80px;
+	padding: 0 20px;
+	vertical-align: middle;
+	align-items: center;
+	background-color: #201C39;
+}
+
+header a{
+	width: 100px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} 
+
+header img{
+	width: 100px;
+}
+/*HEADER**********************************************************/
+
+/*BANNER**********************************************************/
+.banner{
+	width: 100%;
+	min-height: 500px;
+	background-image: url(../img/header_bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner .center{
+	display: flex;
+}
+
+.banner .banner_left{
+	width: calc(100% - 400px);
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.banner .box{
+	width: 500px;
+	background-color: #171429b6;
+	list-style-position: inside;
+	padding: 10px;
+}
+
+.banner .box li{
+	font-size: 16px;
+	color: white;
+	margin: 25px 0;
+}
+
+.banner .banner_right{
+	width: 100%;
+	max-width: 400px;
+}
+
+.banner form{
+	top: 0;
+	right: 20px;
+	width: 100%;
+	height: 600px;
+	margin: -25px 0;
+	padding: 20px 10px;
+	border: 10px solid rgb(200, 200, 200);
+	text-align: justify;
+	color: gray;
+	background-color: white;
+}
+
+.banner form h4{
+	font-weight: normal;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.banner form p{
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+.banner form input{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 16px;
+	outline: gray;
+}
+
+.banner form span{
+	display: block;
+	margin: 30px 0;
+}
+
+.banner form .aux-button{
+	bottom: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+.banner form button{
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	color: white;
+	background-color: #393C70;
+	cursor: pointer;
+}
+
+.banner form button:hover{
+	background-color: #2f315d;
+}
+/*BANNER********************************************************/
+
+/*TEXTO-SOBRE***************************************************/
+.texto-sobre{
+	width: 100%;
+	padding: 50px 0 0 0;
+	background-color: #DEDDDE;
+	overflow: visible;
+}
+
+.texto-sobre .aux-texto-sobre{
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.texto-sobre h1{
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+
+.texto-sobre p{
+	margin-bottom: 40px;
+	font-size: 16px;
+	color: rgb(70, 70, 70);
+	text-align: justify;
+}
+
+.texto-sobre .seta{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	background-color: #393C70;
+	padding: 5px;
+	position: relative;
+	bottom: -30px;
+}
+
+.seta img{
+	width: 100%;
+}
+
+/*TEXTO-SOBRE***************************************************/
+
+/*VANTAGENS*****************************************************/
+.vantagens{
+	width: 100%;
+	padding: 80px 20px;
+	text-align: center;
+}
+
+
+.vantagens h2{
+	margin-bottom: 80px;
+	font-weight: normal;
+	color: #393C70;
+}
+
+.vantagens .caixas{	
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.caixas .caixa-single{
+	margin: 20px;
+	width: calc(100% / 3);
+}
+
+.vantagens .caixas .caixa-single img{
+	margin: 0 auto;
+	width: 50px;
+}
+
+.vantagens .caixa-single h3{
+	margin: 30px 0 20px 0;
+}
+
+.vantagens .caixa-single p{
+	color: rgb(70, 70, 70);
+	text-align: justify;
+}
+/*VANTAGENS*****************************************************/
+
+/*FOOTER********************************************************/
+footer{
+	width: 100%;
+	padding: 30px 0 20px 0;
+	text-align: center;
+	border-top: 3px solid rgb(70, 70, 70);
+}
+
+footer p{
+	font-size: 18px;
+	color: rgb(70, 70, 70);
+	margin-bottom: 10px;
+}
+
+/*Tablet*/
+@media screen and (max-width: 980px){
+
+	.texto-sobre .aux-texto-sobre{
+		width: 80%;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.vantagens .caixas{
+		width: 80%;
+		margin-bottom: 20px;
+		text-align: center;
+		flex-direction: column;
+	}
+	
+	.caixas .caixa-single{
+		width: 100%;
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width: 840px){
+	.banner .center{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.banner .banner_left{
+		margin: 0 auto;
+		width: 100%;
+		max-width: 500px;
+		margin-bottom: 50px;
+	}
+	.vantagens .caixas{
+		width: 100%;
+	}
+	.vantagens .caixa-single p{
+		font-size: 14px;
+		color: rgb(70, 70, 70);
+	}
+	
+}
