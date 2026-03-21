@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    height: 200px;
+    padding: 20px 0;
+}
+
+.logo{
+    width: 50%;
+}
+
+.menu{
+    width:50%;
+    padding-top: 30px;
+    text-align:right;
+}
+
+.menu a, a{
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    color: black;
+}
+
+.menu a:hover{
+    color: #017143;
+}
+
+section.sobre{
+    position: relative;
+    height: calc(100% - 200px);
+}
+
+.extras{
+    position: absolute;
+    bottom: -450px;
+    right: -500px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #017143;
+}
+
+.extras img{
+    width: 350px;
+}
+
+.social{
+    position: absolute;
+    top: 100px;
+    right: 520px;
+}
+
+.social a img{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.texto{
+    margin-top: 40px;
+}
+
+.texto h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.texto p{
+    width: 50%;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.texto h1 span{
+    font-weight: bold;
+}
+
+.btn-saiba-mais{
+    width: 160px;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #017143;
+}
+
+.thumb{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: calc(50% - 200px);
+}
+
+.thumb img{
+    width: 80px;
+    margin: 0 20px;
+}

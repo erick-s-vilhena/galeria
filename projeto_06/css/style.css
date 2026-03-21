@@ -1,0 +1,433 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{height:100%;}
+
+.sombra{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.7;
+	z-index: 2;
+}
+
+.center{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+h1 > span{
+	color: #1C8DFF;
+}
+
+/*MAIN------------------------------------------------------------------------------------*/
+main{
+	position: relative;
+	width: 100%;
+	max-width: 1800px;
+	min-height: 80%;
+	padding: 0 2%;
+	color: #ffffff;
+	background-image: url(../images/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+header{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: 1px solid #ffffff;
+	z-index: 3;
+}
+
+header .logo, header nav{
+	display: flex;
+	align-items: flex-end;
+	padding: 10px;
+	height: 80px;
+}
+
+header nav a{
+	color: #ffffff;
+	margin-left: 30px;
+}
+
+header nav a:hover{
+	font-weight: bold;
+}
+
+header .social{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	flex-direction: row-reverse;
+	fill: #ffffff;
+}
+
+header .social svg{
+	width: 20px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.texto-main{
+	position: relative;
+	padding: 100px 50px;
+	z-index: 3;
+}
+
+.texto-main h1{
+	font-size: 40px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.texto-main p{
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 20px;
+}
+
+.texto-main a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #1C8DFF;
+}
+
+.texto-main a:hover{
+	background-color: #1b6ec2;
+}
+
+/*PLANOS------------------------------------------------------------------------------------*/
+.planos header{
+	width: 100%;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	background-color: #ccc;
+}
+
+.planos header h1{
+	font-size: 30px;
+	color: #1C8DFF;
+	border-top: 2px solid #1C8DFF;
+}
+
+.planos .planos-comp{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 80px 2%;
+}
+
+.planos .planos-comp .plano-single{
+	position: relative;
+	min-width: 240px;
+	width: 100%;
+	max-width: 320px;	
+	height: 300px;
+	border: 1px solid #ccc;
+	box-shadow: 3px 3px 3px #ccc;
+	cursor: pointer;
+	margin: 0 10px;
+}
+
+.planos .planos-comp .plano-single h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	background-color: #1C8DFF;
+	color: #ffffff;
+	font-size: 22px;
+}
+
+.planos .planos-comp .plano-single ul{
+	width: 100%;
+	padding: 20px;
+	list-style-position: inside;
+	color: #4d4d4d;
+}
+
+.planos .planos-comp .plano-single li{
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.planos .planos-comp .plano-single p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 24px;
+	font-weight: bold;
+	color: #4d4d4d;
+	border-top: 2px solid #ccc;
+}
+
+
+/*SOBRE------------------------------------------------------------------------------------*/
+.sobre{
+	position: relative;
+	width: 100%;
+	max-width: 1800px;
+	padding: 0 2%;
+	color: #ffffff;
+	background-image: url(../images/bg_parallax.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.sobre .texto-sobre{
+	position: relative;
+	padding: 80px;
+	z-index: 3;
+}
+
+.sobre .texto-sobre h1{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.sobre .texto-sobre p{
+	text-align: justify;
+}
+
+/*CONTATO-DEPOIMENTOS------------------------------------------------------------------------------------*/
+.contato-depoimentos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.contato-depoimentos .contato{
+	width: 50%;
+	padding: 40px;
+}
+
+.contato-depoimentos .contato form{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.contato-depoimentos .contato form h1{
+	font-size: 30px;
+	color: #4d4d4d;
+	margin-bottom: 20px;
+}
+
+.contato-depoimentos .contato form input{
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	margin-bottom: 20px;
+}
+
+.contato-depoimentos .contato form textarea{
+	width: 100%;
+	min-height: 140px;
+	margin-bottom: 20px;
+	resize: vertical;
+}
+
+.contato-depoimentos .contato form button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #1C8DFF;
+	color: #ffffff;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.contato-depoimentos .contato form button:hover{
+	background-color: #1b6ec2;
+}
+
+.contato-depoimentos .depoimentos{
+	width: 50%;
+	padding: 40px;
+}
+
+.contato-depoimentos .depoimentos h1{
+	width: 100%;
+	color: #4d4d4d;
+	font-size: 30px;
+	margin-bottom: 20px;
+	
+}
+
+.contato-depoimentos .depoimentos-comp{
+	width: 100%;
+}
+
+.contato-depoimentos .depoimento-single{
+	padding: 10px;
+	color: #4d4d4d;
+	border: 1px solid #ccc;
+	box-shadow: 3px 3px 3px #ccc;
+	transition: left 2s ease-in-out;
+}
+
+.contato-depoimentos .depoimento-single .perfil{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contato-depoimentos .depoimento-single .perfil img{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+
+.contato-depoimentos .depoimento-single .perfil .dados-perfil{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: calc(100% - 64px);
+	padding-left: 10px;
+}
+
+.contato-depoimentos .depoimento-single .perfil .dados-perfil h3{
+	width: 100%;
+}
+
+.contato-depoimentos .depoimento-single > p{
+	width: 100%;
+	padding: 10px;
+	border-top: 2px solid #ccc;
+	margin-bottom: 20px;
+	line-height: 26px;
+}
+
+footer{
+	width: 100%;
+	background-color: #2D2D2D;
+	padding: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+
+@media screen and (max-width: 860px) {
+	.planos .planos-comp{
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.planos .planos-comp .plano-single{
+		margin: 10px 0;
+	}
+
+	.sobre .texto-sobre{
+		padding: 50px 2%;
+	}
+
+	.contato-depoimentos .contato{
+		width: 100%;
+		padding: 40px 20px;
+	}
+	.contato-depoimentos .contato form{
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.contato-depoimentos form h1{
+		margin: 0 auto;
+	}
+
+	.contato-depoimentos .depoimentos{
+		width: 100%;
+		padding: 40px 20px
+	}
+
+	.contato-depoimentos .depoimentos > h1{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.contato-depoimentos .depoimentos-comp{
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+
+
+@media screen and (max-width: 600px){
+	.texto-main{
+		padding: 60px 20px;
+	}
+	.texto-main h1{
+		font-size: 30px;
+	}
+	.texto-main p, .sobre .texto-sobre p{
+		font-size: 14px;
+	}
+
+	header .logo, header nav{
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	header nav{
+		justify-content: space-around;
+		height: 20px;
+	}
+	header nav a{
+		margin: 0;
+	}
+
+	.planos header h1, .sobre .texto-sobre h1{
+	font-size: 24px;
+	}
+
+	.planos .planos-comp{
+		padding: 50px 2%;
+	}
+
+}
+

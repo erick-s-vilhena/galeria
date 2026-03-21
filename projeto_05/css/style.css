@@ -1,0 +1,457 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Oswald', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+
+/*header**************************************************************************/
+header{
+	width: 100%;
+	background-color: #ffffff;
+}
+
+header .center{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+header .center .logo{
+	width: 180px;
+}
+
+header .center nav a{
+	margin-left: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	color: #000000;
+}
+header .center nav a:hover{
+	color: #4b4b4b;
+}
+
+/*main**************************************************************************/
+main{
+	width: 100%;
+	background-color: #ffffff;
+}
+
+main .center{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*banner**************************************************************************/
+.banner{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 100px 20px;
+	background-color:#000000;
+	background-image: url(../imagens/bg.jpg);
+	background-position:right;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.banner .textos{
+	width: 90%;
+	max-width: 900px;
+	margin-top: 0 auto;
+}
+
+.banner .textos .texto-single{
+	padding: 10px;
+	padding-left: 20px;
+	margin: 10px 0;
+	font-size: 20px;
+	font-style: italic;
+	color: #ffffff;
+	background-image: url(../imagens/box-text.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.banner .textos .texto-single:nth-of-type(1){
+	width: 280px;
+}
+.banner .textos .texto-single:nth-of-type(2){
+	width: 240px;
+}
+.banner .textos .texto-single:nth-of-type(3){
+	width: 200px;
+}
+.banner .textos .texto-single:nth-of-type(4){
+	background-image: url(../imagens/box-white-text.png);
+	width: 400px;
+	color: #000000;
+}
+
+/*destaques**************************************************************************/
+.destaques{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 50px 20px;
+}
+
+.destaques .texto{
+	text-align: center;
+	width: 100%;
+	max-width: 800px;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #000000;
+}
+
+.destaques .texto h1{
+	width: 280px;
+	margin: 0 auto;
+	font-size: 26px;
+	font-style: italic;
+	margin-bottom: -20px;
+	background-color: #ffffff;
+}
+
+.destaques .container{
+	width: 100%;
+	max-width: 1000px;
+}
+
+.destaques .container .carrossel{
+	width: 100%;
+}
+
+.destaques .container .destaque-single .img{
+	width: 100%;
+	padding-top: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 16px;
+}
+.destaques .container .destaque-single:nth-of-type(1) .img{
+	background-image: url(../imagens/carro1.jpg);
+}
+.destaques .container .destaque-single:nth-of-type(2) .img{
+	background-image: url(../imagens/carro2.jpg);
+}
+.destaques .container .destaque-single:nth-of-type(3) .img{
+	background-image: url(../imagens/carro3.jpg);
+}
+.destaques .container .destaque-single:nth-of-type(4) .img{
+	background-image: url(../imagens/carro4.jpg);
+}
+
+.destaques .container .destaque-single h1{
+	font-size: 18px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+.destaques .container .destaque-single p{
+	font-size: 14px;
+	color: #4b4b4b;
+}
+
+.destaques .container .destaque-single a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 120px;
+	padding: 8px;
+	margin-top: 10px;
+	font-size: 18px;
+	background-color: #FB3E2D;
+	color: #ffffff;
+	font-style: italic;
+	border-bottom: 4px solid #b53125;
+	margin-bottom: 20px;
+}
+.destaques .container .destaque-single a:hover{
+	background-color: #b53125;
+}
+
+/*serviços-depoimentos**************************************************************************/
+
+.servicos-depoimentos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+}
+
+.servicos-depoimentos .servicos{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	width: 50%;
+	padding: 40px 40px 40px 20px;
+	background-color: #252425;
+}
+
+.servicos-depoimentos .servicos .center{
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	max-width: 400px;
+}
+
+.servicos-depoimentos .servicos .center .texto{
+	width: calc(100% - 120px);
+	color: #ffffff;
+	font-style: italic;
+}
+
+.servicos-depoimentos .servicos .center .texto h1{
+
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+
+.servicos-depoimentos .servicos .center .texto li{
+	list-style-position: inside;
+}
+
+.servicos-depoimentos .servicos .center a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 100px;
+	padding: 8px;
+	font-size: 18px;
+	background-color: #FB3E2D;
+	color: #ffffff;
+	font-style: italic;
+	border-bottom: 4px solid #b53125;
+}
+.servicos-depoimentos .servicos .center a:hover{
+	background-color: #b53125;
+}
+
+.servicos-depoimentos .depoimentos{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	background-color: #FB3E2D;
+	padding: 40px 20px 40px 40px;
+}
+
+.servicos-depoimentos .depoimentos .center{
+	width: 100%;
+	max-width: 400px;
+	color: #ffffff;
+}
+
+.servicos-depoimentos .depoimentos .center h1{
+	font-size: 22px;
+	font-style: italic;
+	margin-bottom: 30px
+}
+
+.servicos-depoimentos .depoimentos .center .depoimento-single p{
+	margin-bottom: 30px;
+}
+
+.servicos-depoimentos .depoimentos .center .depoimento-single span{
+	display: block;
+	text-align: right;
+	width: 100%;
+}
+
+/*contato**************************************************************************/
+.contato{
+	width: 100%;
+	background-color: #ffffff;
+	padding: 50px 20px;
+}
+
+.contato form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.contato form .texto{
+	text-align: center;
+	width: 100%;
+	max-width: 800px;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #000000;
+}
+
+.contato form .texto h1{
+	width: 220px;
+	margin: 0 auto;
+	font-size: 26px;
+	font-style: italic;
+	margin-bottom: -20px;
+	background-color: #ffffff;
+}
+
+.contato form input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 12px;
+	font-size: 18px;
+	outline: none;
+}
+
+.contato form textarea{
+	width: 100%;
+	min-height: 140px;
+	resize: vertical;
+	padding: 5px;
+	outline: none;
+	font-size: 18px;
+	margin-bottom: 16px
+}
+
+.contato form button{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 120px;
+	padding: 10px;
+	margin: 0 auto;
+	font-size: 18px;
+	background-color: #FB3E2D;
+	color: #ffffff;
+	font-style: italic;
+	border: none;
+	border-bottom: 4px solid #b53125;
+	cursor: pointer;
+}
+
+.contato form button:hover{
+	background-color: #b53125;
+}
+
+/*footer**************************************************************************/
+footer{
+	width: 100%;
+	background-color: #252425;
+	padding: 30px 20px;
+}
+
+footer .center{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+footer .center nav a{
+	margin-left: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	color: #ffffff;
+}
+
+footer .center nav a:hover{
+	color: #4b4b4b;
+}
+
+footer .center .texto p{
+	color: #ffffff;
+}
+
+
+@media screen and (max-width: 780px) {
+	.banner{
+		padding: 50px 20px;
+	}
+
+	.destaques .container{
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.servicos-depoimentos .servicos, .servicos-depoimentos .depoimentos{
+		width: 100%;
+	}
+
+	.servicos-depoimentos .servicos .center{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.servicos-depoimentos .center{
+		margin: 0 auto;
+	}
+
+	footer .center{
+		flex-direction: column;
+		height: auto;
+	}
+
+	footer .center nav{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	footer .center nav a{
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	header .center{
+		flex-direction: column;
+		height: auto;
+	}
+
+	header .center .logo{
+		width: 140px;
+	}
+
+	header .center nav{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	header .center nav a{
+		margin: 10px 0 0 0;
+	}
+
+	.banner{
+		background-size: cover;
+		background-position: left;
+	}
+
+	.banner .textos .texto-single:nth-of-type(4){
+		width: 300px;
+		background-position: right;
+	}
+	
+}
