@@ -161,6 +161,10 @@ main .center{
 	width: 100%;
 }
 
+.destaques .container .destaque-single{
+	padding: 10px;
+}
+
 .destaques .container .destaque-single .img{
 	width: 100%;
 	padding-top: 100%;

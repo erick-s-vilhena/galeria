@@ -304,37 +304,34 @@ header .center{
 .sessao-3 .direita .aux{
 	width: 100%;
 	max-width: 400px;
-	overflow: hidden;
 	color: rgb(62, 62, 62);
 }
 
-.sessao-3 .direita .aux .carrosel{
-	width: 100%;
-}
 
-.sessao-3 .direita .aux .carrosel .perfil{
+
+.sessao-3 .direita .aux .perfil{
 	display: flex;
 	flex-wrap: nowrap;
 	margin-bottom: 10px;
 }
 
-.sessao-3 .direita .aux .carrosel .perfil .texto{
+.sessao-3 .direita .aux .perfil .texto{
 	margin-right: 10px;
 	font-weight: normal;
 	font-style: italic;
 }
 
-.sessao-3 .direita .aux .carrosel .perfil .texto p{
+.sessao-3 .direita .aux .perfil .texto p{
 	font-size: 14px;
 }
 
-.sessao-3 .direita .aux .carrosel img{
+.sessao-3 .direita .aux img{
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
 }
 
-.sessao-3 .direita .aux .carrosel .slider p{
+.sessao-3 .direita .aux p{
 	line-height: 28px;
 }
 
@@ -422,7 +419,7 @@ header .center{
 	max-width: 400px;
 	min-width: 300px;
 	height: 300px;
-	padding: 20px;
+	background-color: gray;
 }
 
 footer{
@@ -550,148 +547,3 @@ footer{
 		padding: 10px 10px;
 	}
 }
-
-
-/* =========================
-   AJUSTE DA SESSAO 3
-   Desktop: lista vertical
-   Mobile: carrossel com bullets + arraste
-   ========================= */
-
-.sessao-3{
-    align-items: stretch;
-}
-
-.sessao-3 .esquerda, 
-.sessao-3 .direita{
-	padding-top: 200px !important;
-}
-
-.sessao-3 .esquerda .aux,
-.sessao-3 .direita .aux{
-    max-width: 520px;
-}
-
-.sessao-3 .esquerda{
-    padding: 150px 30px 70px 30px;
-}
-
-.sessao-3 .direita{
-    padding: 150px 30px 70px 30px;
-}
-
-.sessao-3 .direita .aux{
-    overflow: visible;
-}
-
-.sessao-3 .direita .aux .carrosel{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.sessao-3 .direita .aux .carrosel .slider{
-    width: 100%;
-}
-
-.sessao-3 .direita .aux .carrosel .perfil{
-    align-items: center;
-}
-
-.sessao-3 .direita .aux .carrosel .perfil .texto{
-    flex: 1;
-}
-
-.sessao-3 .direita .aux .carrosel .perfil .texto h1{
-    font-size: 34px;
-    line-height: 1.05;
-}
-
-.sessao-3 .direita .aux .carrosel .perfil .texto p{
-    margin-top: 4px;
-    font-size: 16px;
-}
-
-.sessao-3 .direita .aux .carrosel .slider > p{
-    line-height: 1.8;
-    font-size: 18px;
-}
-
-.carrossel-bullets{
-    display: none;
-}
-
-.carrossel-bullets button{
-    width: 14px;
-    height: 14px;
-    border: 0;
-    border-radius: 50%;
-    background: #c7c7c7;
-    cursor: pointer;
-    transition: transform .2s ease, opacity .2s ease, background-color .2s ease;
-}
-
-.carrossel-bullets button.ativo{
-    background: #666;
-    transform: scale(1.08);
-}
-
-
-    .sessao-3 .esquerda{
-        padding: 90px 24px 50px 24px;
-    }
-
-    .sessao-3 .direita{
-        padding: 40px 24px 40px 24px;
-    }
-
-    .sessao-3 .direita .aux{
-        max-width: 400px;
-        overflow: hidden;
-		padding: 2px 0;
-    }
-
-    .sessao-3 .direita .aux .carrosel{
-        flex-direction: row;
-        gap: 0;
-        width: 100%;
-		max-width: 400px;
-		/* background-color: rgba(255, 60, 00, 0.100); */
-        transition: transform .35s ease;
-        touch-action: pan-y;
-        cursor: grab;
-        user-select: none;
-    }
-
-    .sessao-3 .direita .aux .carrosel.arrastando{
-        cursor: grabbing;
-        transition: none;
-    }
-
-    .sessao-3 .direita .aux .carrosel .slider{
-        min-width: 100%;
-        flex: 0 0 100%;
-    }
-
-    .sessao-3 .direita .aux .carrosel .perfil .texto h1{
-        font-size: 28px;
-    }
-
-    .sessao-3 .direita .aux .carrosel .slider > p{
-        font-size: 16px;
-        line-height: 1.7;
-    }
-
-    .carrossel-bullets{
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-top: 26px;
-        justify-content: flex-start;
-    }
-
-	@media screen and (max-width: 768px) {
-		.sessao-3 .direita{
-			padding-top: 50px !important;
-		}
-	}

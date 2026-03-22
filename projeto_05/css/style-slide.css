@@ -1,0 +1,54 @@
+.carousel{
+  width: 100%;
+  position: relative;
+}
+
+.carousel-viewport{
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track{
+  display: flex;
+  will-change: transform;
+}
+
+.carousel-slide{
+  padding-right: 0;
+}
+
+
+.carousel-bullets{
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 2px;
+}
+
+.carousel-bullets.center{
+  justify-content: center;
+}
+
+.carousel-bullets button{
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  background: #c5c5c5;
+  cursor: pointer;
+  transition: transform .2s ease, background-color .2s ease, opacity .2s ease;
+}
+
+.carousel-bullets button.is-active{
+  background: #666;
+  transform: scale(1.08);
+}
+
+.carousel.is-dragging{
+  user-select: none;
+}
+
+.carousel.is-dragging .carousel-track{
+  transition: none !important;
+  cursor: grabbing;
+}

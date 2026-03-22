@@ -4,13 +4,15 @@
 	<title>Landing Page</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/style-slide.css" rel="stylesheet" type="text/css" />
 	<meta charset="utf-8" />
 	<meta name="description" content="Terceiro projeto do curso de front-and" />
 	<meta name="keywords" content="Terceiro, projeto, front-and" />
 	<meta name="author" content="Erick Vilhena" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
-	<script defer src="./js/esv-slider.js"></script>
+	<!-- <script defer src="./js/esv-slider.js"></script> -->
 	<script defer src="js/script.js"></script>
+	<script defer src="js/script-slide.js"></script>
 </head>
 <body>
 	<section class="header">
@@ -96,44 +98,57 @@
 
 		<div class="direita">
 			<div class="aux">
-				<div class="carrosel">
-					<div class="slider">
-						<div class="perfil">
-							<div class="texto">
-								<h1>Erick Vilhena</h1>
-								<p>Desenvolverdor front-and</p>
-							</div>
-							<img src="img/eri.jpg" />
-						</div><!--perfil-->
-						
-						<p> Aliquam vestibulum interdum est viverra vestibulum. Integer cursus sem ut est pretium mollis. Nunc quis pellentesque nulla, porttitor laoreet neque.</p>
-					</div><!--slider-->
+				<div class="carrosel carousel js-carousel "     
+				 data-infinite="true"
+				 data-autoplay="true"
+				 data-autoplay-speed="3500"
+				 data-show-bullets="true"
+				 data-slides-desktop="1"
+				 data-slides-tablet="1"
+				 data-slides-mobile="1">
+				 
+					<div class="carousel-track">
+						<div class="carousel-slide">
+							<div class="perfil">
+								<div class="texto">
+									<h1>Erick Vilhena</h1>
+									<p>Desenvolverdor front-and</p>
+								</div>
+								<img src="img/eri.jpg" />
+							</div><!--perfil-->
+							
+							<p> Aliquam vestibulum interdum est viverra vestibulum. Integer cursus sem ut est pretium mollis. Nunc quis pellentesque nulla, porttitor laoreet neque.</p>
+						</div><!--carousel-slide-->
 
-					<div class="slider">
-						<div class="perfil">
-							<div class="texto">
-								<h1>João da Silva</h1>
-								<p>Co-fundador/Desenvolverdor</p>
-							</div>
-							<img src="img/actor1.png" />
-						</div><!--perfil-->
-						
-						<p>Nunc augue dolor, convallis sed mauris eget, semper suscipit purus. Proin ut elit pretium, rhoncus diam vel, lacinia turpis. Donec mollis tortor id condimentum cursus. Curabitur id tempus lacus. Donec dignissim at diam nec efficitur.</p>
-					</div><!--slider-->
+						<div class="carousel-slide">
+							<div class="perfil">
+								<div class="texto">
+									<h1>João da Silva</h1>
+									<p>Co-fundador/Desenvolverdor</p>
+								</div>
+								<img src="img/actor1.png" />
+							</div><!--perfil-->
+							
+							<p>Nunc augue dolor, convallis sed mauris eget, semper suscipit purus. Proin ut elit pretium, rhoncus diam vel, lacinia turpis. Donec mollis tortor id condimentum cursus. Curabitur id tempus lacus. Donec dignissim at diam nec efficitur.</p>
+						</div><!--carousel-slide-->
 
-					<div class="slider">
-						<div class="perfil">
-							<div class="texto">
-								<h1>Ana Maria</h1>
-								<p>Desenvolverdor front-and</p>
-							</div>
-							<img src="img/actor2" />
-						</div><!--perfil-->
-						
-						<p>Nulla eleifend quam ut elementum tempus. Maecenas accumsan metus et est finibus, porta sollicitudin nulla lacinia.</p>
-					</div><!--slider-->
+						<div class="carousel-slide">
+							<div class="perfil">
+								<div class="texto">
+									<h1>Ana Maria</h1>
+									<p>Desenvolverdor front-and</p>
+								</div>
+								<img src="img/actor2" />
+							</div><!--perfil-->
+							
+							<p>Nulla eleifend quam ut elementum tempus. Maecenas accumsan metus et est finibus, porta sollicitudin nulla lacinia.</p>
+						</div><!--carousel-slide-->
+
+					</div>
+
+					<div class="carousel-bullets" aria-label="Navegação do carrossel"></div>
 				</div><!--carrosel-->
-				<div class="carrossel-bullets" aria-label="Navegação do carrossel"></div>
+				
 			</div><!--aux-->
 		</div><!--direita-->
 	</section><!--sessao-3-->

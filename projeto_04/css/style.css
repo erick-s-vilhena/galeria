@@ -238,7 +238,6 @@ header .center nav a:hover{
 .tratamentos .center .area-tratamentos .carrossel{
 	width: 100%;
 }
-
 .tratamentos .center .area-tratamentos .carrossel .tri-tratamento{
 	margin: 0 auto;
 	text-align: left;
@@ -367,7 +366,9 @@ header .center nav a:hover{
 }
 
 .social .center .fotos .img{
-	padding-top: 100%;
+	height: calc(100% / 6);
+	aspect-ratio:  1 / 1;
+	overflow: hidden;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

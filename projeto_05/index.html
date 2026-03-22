@@ -4,13 +4,14 @@
 	<title>Projeto 05</title>
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style-slide.css" rel="stylesheet">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 	<meta name="description" content="Quarto projeto" />
 	<meta name="keywords" content="quarto, projeto" />
 	<meta name="author" content="Erick Vilhena" />
-	<script defer src="./js/esv-slider.js"></script>
 	<script defer src="./js/script.js"></script>
+	<script defer src="./js/script-slide.js"></script>
 </head>
 
 <body>
@@ -54,9 +55,17 @@
 					<h1>VEÍCULOS EM DESTAQUE</h1>
 				</div><!--texto-->
 
-				<div class="container">
-					<div class="carrossel">
-						<div class="destaque-single">
+				<div class="container carousel js-carousel"
+				          data-infinite="false"
+							data-autoplay="false"
+							data-autoplay-speed="3500"
+							data-show-bullets="true"
+							data-slides-desktop="4"
+							data-slides-tablet="3"
+							data-slides-mobile="2"
+							data-drag-mobile="true">
+					<div class="carrossel carousel-track">
+						<div class="destaque-single carousel-slide">
 							<div class="img"></div><!--img-carro-->
 	
 							<h1>Nome do carro 1</h1>
@@ -67,7 +76,7 @@
 							<a href="#">Mais detalhes</a>
 						</div><!--destaque-single-->
 	
-						<div class="destaque-single">
+						<div class="destaque-single carousel-slide">
 							<div class="img"></div><!--img-carro-->
 	
 							<h1>Nome do carro 2</h1>
@@ -78,7 +87,7 @@
 							<a href="#">Mais detalhes</a>
 						</div><!--destaque-single-->
 	
-						<div class="destaque-single">
+						<div class="destaque-single carousel-slide">
 							<div class="img"></div><!--img-carro-->
 	
 							<h1>Nome do carro 3</h1>
@@ -89,7 +98,7 @@
 							<a href="#">Mais detalhes</a>
 						</div><!--destaque-single-->
 	
-						<div class="destaque-single">
+						<div class="destaque-single carousel-slide">
 							<div class="img"></div><!--img-carro-->
 	
 							<h1>Nome do carro 4</h1>
@@ -101,6 +110,7 @@
 						</div><!--destaque-single-->
 	
 					</div><!--carrossel-->
+					<div class="carousel-bullets center" aria-label="Navegação do carrossel"></div>
 				</div><!--container-->
 			</section><!--destaques-->
 		</section><!--center-->
@@ -129,24 +139,35 @@
 			<div class="center">
 				<h1>DEPOIMENTOS</h1>
 
-				<div class="carrossel-2">
-						<div class="depoimento-single">	
+				<div class="carrossel-2 carousel js-carousel"
+				          data-infinite="false"
+							data-autoplay="false"
+							data-autoplay-speed="3500"
+							data-show-bullets="true"
+							data-slides-desktop="1"
+							data-slides-tablet="1"
+							data-slides-mobile="1"
+							data-drag-mobile="true">
+							<div class="carousel-track">
+												<div class="depoimento-single carousel-slide">	
 							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel augue mi. Maecenas vestibulum nunc at lorem commodo, ac egestas lacus vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
 						
 							<span>- João da Silva</span>
 						</div><!--depoimentos-single-->
 
-						<div class="depoimento-single">	
+						<div class="depoimento-single carousel-slide">	
 							<p>"Donec laoreet aliquet magna in convallis. Sed in rhoncus ipsum, nec semper urna. Phasellus tincidunt aliquam nunc, id scelerisque leo sollicitudin eu."</p>
 						
 							<span>- Ana Maria da Silva</span>
 						</div><!--depoimentos-single-->
 
-						<div class="depoimento-single">	
+						<div class="depoimento-single carousel-slide">	
 							<p>"Donec sollicitudin arcu non purus eleifend pulvinar. Praesent sed hendrerit velit. Interdum et malesuada fames ac ante ipsum primis in faucibus."</p>
 						
 							<span>- José da Silva</span>
 						</div><!--depoimentos-single-->
+					</div>
+					<div class="carousel-bullets" aria-label="Navegação do carrossel"></div>
 				</div><!--carrossel-->
 				</div><!--center-->
 		</section><!--depoimentos-->

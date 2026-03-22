@@ -4,13 +4,15 @@
 	<title>Projeto 04</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/style-slide.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8" />
 	<meta name="description" content="Quarto projeto do curso de front-and">
 	<meta name="keywords" content="quarto, projeto, front-and">
 	<meta name="author" content="Erick Vilhena" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
-	<script defer src="./js/esv-slider.js"></script>
+	<!-- <script defer src="./js/esv-slider.js"></script> -->
 	<script defer src="js/script.js"></script>
+	<script defer src="js/script-slide.js"></script>
 </head>
 <body>
 	<header>
@@ -38,36 +40,46 @@
 	</header>
 
 	<section class="mozaico">
-		<div class="center">
-			<div class="dual-img">
-				<div style="background-image: url(imagens/1.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/2.jpg);" class="img"></div>
-			</div><!--dual-img-->
+		<div class="center carousel js-carousel"
+          data-infinite="false"
+          data-autoplay="true"
+          data-autoplay-speed="2000"
+          data-show-bullets="false"
+          data-slides-desktop="6"
+          data-slides-tablet="4"
+          data-slides-mobile="3"
+          data-drag-mobile="true">
+			<div class="carousel-track">
+				<div class="dual-img carousel-slide">
+					<div style="background-image: url(imagens/1.jpg);" class="img"></div>
+					<div style="background-image: url(imagens/2.jpg);" class="img"></div>
+				</div><!--dual-img-->
 
-			<div class="dual-img">
-				<div style="background-image: url(imagens/3.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/4.jpg);" class="img"></div>
-			</div><!--dual-img-->
+				<div class="dual-img carousel-slide">
+					<div style="background-image: url(imagens/3.jpg);" class="img"></div>
+					<div style="background-image: url(imagens/4.jpg);" class="img"></div>
+				</div><!--dual-img-->
 
-			<div class="dual-img">
-				<div style="background-image: url(imagens/5.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/6.jpg);" class="img"></div>
-			</div><!--dual-img-->
+				<div class="dual-img carousel-slide">
+					<div style="background-image: url(imagens/5.jpg);" class="img"></div>
+					<div style="background-image: url(imagens/6.jpg);" class="img"></div>
+				</div><!--dual-img-->
 
-			<div class="dual-img">
-				<div style="background-image: url(imagens/7.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/8.jpg);" class="img"></div>
-			</div><!--dual-img-->
+				<div class="dual-img carousel-slide">
+					<div style="background-image: url(imagens/7.jpg);" class="img"></div>
+					<div style="background-image: url(imagens/8.jpg);" class="img"></div>
+				</div><!--dual-img-->
 
-			<div class="dual-img">
-				<div style="background-image: url(imagens/9.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/10.jpg);" class="img"></div>
-			</div><!--dual-img-->
+				<div class="dual-img carousel-slide">
+					<div style="background-image: url(imagens/9.jpg);" class="img"></div>
+					<div style="background-image: url(imagens/10.jpg);" class="img"></div>
+				</div><!--dual-img-->
 
-			<div class="dual-img">
-				<div style="background-image: url(imagens/11.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/12.jpg);"  class="img"></div>
-			</div><!--dual-img-->
+				<div class="dual-img carousel-slide">
+					<div style="background-image: url(imagens/11.jpg);" class="img"></div>
+					<div style="background-image: url(imagens/12.jpg);"  class="img"></div>
+				</div><!--dual-img-->
+			</div>
 		</div><!--center-->
 	</section><!--mozaico-->
 
@@ -158,8 +170,18 @@
 			<h1>TRATAMENTOS</h1>
 
 			<div class="area-tratamentos">
-				<div class="carrossel">
-					<div class="tri-tratamento">
+				<div class="carrossel carousel js-carousel"
+					data-infinite="false"
+					data-autoplay="true"
+					data-autoplay-speed="3500"
+					data-show-bullets="true"
+					data-slides-desktop="3"
+					data-slides-tablet="2"
+					data-slides-mobile="1"
+					data-drag-mobile="true">
+
+					<div class="carousel-track">
+					<div class="tri-tratamento carousel-slide">
 						<div class="tratamento-single">
 							<h1>Profilaxia e Prevenção</h1>
 		
@@ -179,7 +201,7 @@
 						</div><!--tratamento-single-->
 					</div><!--tri-tratamento-->
 					
-					<div class="tri-tratamento">
+					<div class="tri-tratamento carousel-slide">
 						<div class="tratamento-single">
 							<h1>Restauração em resina composta</h1>
 		
@@ -199,7 +221,7 @@
 						</div><!--tratamento-single-->
 					</div><!--tri-tratamento-->
 					
-					<div class="tri-tratamento">
+					<div class="tri-tratamento carousel-slide">
 						<div class="tratamento-single">
 							<h1>Aparelhos ordontologicos esteticos</h1>
 		
@@ -218,6 +240,8 @@
 							<p>Morbi consectetur nibh quis purus lobortis maximus. Mauris eu urna ipsum.</p>
 						</div><!--tratamento-single-->
 					</div><!--tri-tratamento-->
+					</div>
+					<div class="carousel-bullets" aria-label="Navegação do carrossel"></div>
 					
 				</div><!--carrossel-->
 			</div><!--area-tratamentos-->
@@ -227,9 +251,17 @@
 	<section class="depoimentos">
 		<div class="center">
 			<h1>DEPOIMENTOS</h1>
-			<div class="carrossel">
-				<div class="aux-carrossel">
-					<div class="depoimento-single">
+			<div class="carrossel carousel js-carousel"
+					data-infinite="false"
+					data-autoplay="true"
+					data-autoplay-speed="3500"
+					data-show-bullets="true"
+					data-slides-desktop="1"
+					data-slides-tablet="1"
+					data-slides-mobile="1"
+					data-drag-mobile="true">
+				<div class="aux-carrossel carousel-track">
+					<div class="depoimento-single carousel-slide">
 						<img src="imagens/esquerda.png" />
 
 						<p>Aliquam tellus diam, accumsan suscipit sem nec, dapibus pulvinar enim. Maecenas dignissim tortor at dolor ornare, suscipit tincidunt odio vulputate.</p>
@@ -242,7 +274,7 @@
 						</div>
 					</div><!--depoimento-single-->
 
-					<div class="depoimento-single">
+					<div class="depoimento-single carousel-slide">
 						<img src="imagens/esquerda.png" />
 
 						<p>Sed a luctus nunc. Phasellus eros lorem, vehicula nec rhoncus ut, auctor sed lectus. Etiam nisi lorem, semper ut orci sagittis, pulvinar luctus turpis.</p>
@@ -255,6 +287,7 @@
 						</div>
 					</div><!--depoimento-single-->
 				</div><!--aux-carrossel-->
+				<div class="carousel-bullets center" aria-label="Navegação do carrossel"></div>
 			</div><!--carrossel-->
 		</div><!--center-->
 	</section><!--depoimentos-->
@@ -266,16 +299,26 @@
 				<p>Acesse nosso Instagran para ver mais fotos</p>
 			</div><!--insta-->
 
-			<div class="fotos">
-				<div style="background-image: url(imagens/1.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/2.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/3.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/4.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/5.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/6.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/7.jpg);" class="img"></div>
-				<div style="background-image: url(imagens/8.jpg);" class="img"></div>
+			<div class="carousel js-carousel" 
+					data-infinite="false"
+					data-autoplay="true"
+					data-autoplay-speed="1500"
+					data-show-bullets="true"
+					data-slides-desktop="8"
+					data-slides-tablet="6"
+					data-slides-mobile="4"
+					data-drag-mobile="false">
+				<div class="fotos carousel-track">
+				<div style="background-image: url(imagens/1.jpg);" class="img carousel-slide"></div>
+				<div style="background-image: url(imagens/2.jpg);" class="img carousel-slide"></div>
+				<div style="background-image: url(imagens/3.jpg);" class="img carousel-slide"></div>
+				<div style="background-image: url(imagens/4.jpg);" class="img carousel-slide"></div>
+				<div style="background-image: url(imagens/5.jpg);" class="img carousel-slide"></div>
+				<div style="background-image: url(imagens/6.jpg);" class="img carousel-slide"></div>
+				<div style="background-image: url(imagens/7.jpg);" class="img carousel-slide"></div>
+				<div style="background-image: url(imagens/8.jpg);" class="img carousel-slide"></div>
 			</div><!--fotos-->
+			</div>
 
 			<div class="face">
 				<img src="imagens/facebook.png" />
