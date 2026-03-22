@@ -35,8 +35,22 @@ header .center{
 	padding: 10px 20px;
 }
 
-header .center .logo{
-	width: 180px;
+.Logo {
+    color: #000;
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    user-select: none;
+    text-decoration: none;
+}
+
+.Logo span {
+    color: #FB3E2D;
+}
+
+.Logo p {
+    overflow: hidden;
+    transition: width 0.5s;
 }
 
 header .center nav a{

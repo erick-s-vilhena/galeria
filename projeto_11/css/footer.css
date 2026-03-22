@@ -12,6 +12,7 @@
 }
 
 .footer_social{
+    width: 50%;
     display: flex;
 }
 
@@ -23,14 +24,36 @@
     color: #555;
 }
 
+.footer_logo{
+    width: 50%;
+}
+.Logo {
+    width: 180px !important;
+    color: #000;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    user-select: none;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.Logo span {
+    color: #388e3c;
+}
+
+.Logo p {
+    overflow: hidden;
+    transition: width 0.5s;
+    width: initial !important;
+    padding: 0 !important;
+}
+
 @media screen and (max-width: 660px){
     .footer_container{
         flex-wrap: wrap;
     }
 
-    .footer_logo{
-        width: 140px;
-    }
 
     .footer p {
         width: 100%;
