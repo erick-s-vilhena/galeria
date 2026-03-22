@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.center{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+main{
+    width: 100%;
+    max-width: 2000px;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+main header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .logo h2{
+    font-weight: normal;
+    color: #fff;
+}
+
+.Logo {
+    color: #fff;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    user-select: none;
+    text-decoration: none;
+}
+
+.Logo span {
+    color: #FF6C24;
+}
+
+.Logo p {
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+main nav{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+main nav li a{
+    color: #fff;
+    margin: 0 24px;
+}
+
+main nav .btn_orcamento{
+    border: 2px solid #fff;
+    width: 240px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+main nav a:hover{
+    color: #ddd;
+}
+
+.main{
+    width: 100%;
+    padding: 160px 0;
+}
+
+.main .main_row{
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+}
+
+.main h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.main p{
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.main form{
+    width: 100%;
+    display: flex;
+}
+
+.main form input{
+    width: calc(100% - 190px);
+    border-radius: 20px;
+    border: none;
+    padding: 8px 10px;
+    outline: none;
+    color: #555;
+}
+
+.main form button{
+    width: 180px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #FF6C24;
+}
+.main form button:hover{
+    background-color: #bf531d;
+}
+
+.sobre .row_first{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 80px 0;
+    text-align: center;
+    color: #555;
+}
+
+.sobre .row_second{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.sobre .row_second .column{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre .row_second .column h3{
+    width: 100%;
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: normal;
+    color: #1c1e3d;
+}
+
+.sobre .row_second .column p{
+    color: #555;
+}
+
+.sobre .row_second .column img{
+    padding: 30px;
+}
+
+.sobre .row_three{
+    width: 100%;
+    min-height: 360px;
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sobre .row_three .box{
+    position: absolute;
+    right: 40px;
+    bottom: -40px;
+    color: #1c1e3d;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(170,170,170,1);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(170,170,170,1);
+    box-shadow: 0px 6px 5px 0px rgba(170,170,170,1);
+    background-color: #fff;
+    max-width: 560px;
+    padding: 40px;
+}
+
+.sobre .row_three .box p{
+    margin-bottom: 20px;
+}
+
+.sobre .row_three .box span{
+    font-weight: bold;
+}
+
+
+.produtos{
+    width: 100%;
+    padding: 100px 0;
+}
+
+.produtos h2{
+    color: #1c1e3d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.produtos .row{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produtos .produto-single{
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin:10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(170,170,170,1);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(170,170,170,1);
+    box-shadow: 4px 6px 5px 0px rgba(170,170,170,1);
+}
+
+.produtos .produto-single h3{
+    color: #1c1e3d;
+    margin: 20px;
+}
+
+.produtos .produto-single p{
+    color: #1c1e3d;
+    margin: 20px;
+    margin-bottom: 80px;
+    font-size: 14px;
+}
+
+.produtos .produto-single button{
+    position: absolute;
+    padding: 10px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid #1c1e3d;
+    color: #1c1e3d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contato{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.contato .row{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato .row h2{
+    color: #1c1e3d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contato form{
+    width: 100%;
+    text-align: right;
+}
+
+.contato form p{
+    color: #1c1e3d;
+    font-size: 14px;
+}
+
+.contato form input{
+    width: calc(100% - 130px);
+    padding: 8px 10px;
+    margin: 5px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.contato form textarea{
+    width: calc(100% - 130px);
+    padding: 8px 10px;
+    margin: 8px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    resize: vertical;
+    vertical-align: top;
+}
+
+.contato button{
+    width: 120px;
+    display: block;
+    padding: 8px 10px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #FF6C24;
+}
+.contato button:hover{
+    background-color: #bf531d;
+}
+
+footer{
+    border-top: 1px solid #1c1e3d;
+}
+
+footer .row{
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    color: #1c1e3d;
+}
+
+footer .column{
+    width: 50%;
+}
+
+footer .marca{
+    width: 100%;
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .marca .Logo{
+    width: 100%;
+}

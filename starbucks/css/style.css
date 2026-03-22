@@ -9,6 +9,11 @@ html,body{
     height: 100%;
     overflow: hidden;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 .center{
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +65,11 @@ section.sobre{
 
 .extras img{
     width: 350px;
+    transition: 0.3s;
+}
+
+.extras img:hover{
+    transform: scale(1.1) rotate(-10deg);
 }
 
 .social{
@@ -73,6 +83,10 @@ section.sobre{
     width: 30px;
     height: 30px;
     margin-top: 10px;
+}
+
+.social a img:hover{
+    transform: scale(1.2);
 }
 
 .texto{
@@ -105,6 +119,10 @@ section.sobre{
     background-color: #017143;
 }
 
+.btn-saiba-mais:hover{
+    background-color: #017143cc;
+}
+
 .thumb{
     display: flex;
     position: absolute;
@@ -115,4 +133,159 @@ section.sobre{
 .thumb img{
     width: 80px;
     margin: 0 20px;
+    transition: 0.3s;
+}
+
+.thumb img:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+.Logo {
+    color: #017143;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    user-select: none;
+    text-decoration: none;
+}
+
+.Logo span {
+    color: var(--cor-prima);
+}
+
+.Logo p {
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+/* =========================
+   RESPONSIVO
+   ========================= */
+@media screen and (max-width: 1024px){
+    html, body{
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    header{
+        height: auto;
+        padding: 24px 0 10px 0;
+    }
+
+    .center{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo,
+    .menu{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu{
+        padding-top: 0;
+    }
+
+    section.sobre{
+        height: auto;
+        min-height: calc(100vh - 120px);
+        padding: 20px 0 40px 0;
+    }
+
+    section.sobre .center{
+        position: relative;
+        z-index: 2;
+    }
+
+    .texto{
+        margin-top: 80px;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .texto h1{
+        font-size: clamp(34px, 6vw, 50px);
+        line-height: 1.15;
+    }
+
+    .texto p{
+        width: 100%;
+        max-width: 600px;
+        margin-top: 16px;
+        text-align: justify;
+        padding: 0 20px;
+    }
+
+    .btn-saiba-mais{
+        margin-top: 8px;
+    }
+
+    .thumb{
+        position: static;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    .thumb img{
+        margin: 0;
+    }
+
+    .extras{
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        margin: 30px auto 0 auto;
+        padding: 60px 20px 30px 20px;
+        border-radius: 40px 40px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .extras > img{
+        width: min(100%, 320px);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .social{
+        position: static;
+        display: flex;
+        gap: 30px;
+        margin-top: 24px;
+        justify-content: center;
+    }
+
+    .social a img{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .menu a, a{
+        margin-right: 10px;
+    }
+
+    .texto h1{
+        font-size: 30px;
+    }
+
+    .thumb img{
+        width: 64px;
+    }
+
+    .Logo{
+        justify-content: center;
+    }
 }

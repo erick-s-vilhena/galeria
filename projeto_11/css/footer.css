@@ -1,0 +1,40 @@
+.footer{
+    width: 100%;
+    background-color: #fff;
+}
+
+.footer_container{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_social{
+    display: flex;
+}
+
+.footer_social a{
+    margin: 16px;
+}
+
+.footer p{
+    color: #555;
+}
+
+@media screen and (max-width: 660px){
+    .footer_container{
+        flex-wrap: wrap;
+    }
+
+    .footer_logo{
+        width: 140px;
+    }
+
+    .footer p {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+}

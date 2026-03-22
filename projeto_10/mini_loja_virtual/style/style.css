@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 20px;
+    background-color: #c8c8c8;
+}
+
+img{
+    width: 100%;
+}
+
+#produtos, #carrinho{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+h1{
+    width: 100%;
+}
+
+.produto-single{
+    max-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+img{
+    margin-bottom: 10px;
+}
+
+p{
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.produto-single button{
+    width: 180px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgb(29, 121, 175);
+}

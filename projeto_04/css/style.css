@@ -25,12 +25,30 @@ header .center{
 	align-items: center;
 }
 
-header .center .logo{
+/* header .center .logo{
 	width: 220px
-}
+} */
 
 header .center .logo img{
 	width: 100%;
+}
+
+.Logo {
+    color: #3d4c58;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    user-select: none;
+    text-decoration: none;
+}
+
+.Logo span {
+    color: #3d4c58;
+}
+
+.Logo p {
+    overflow: hidden;
+    transition: width 0.5s;
 }
 
 header .center nav{
@@ -464,6 +482,15 @@ footer .marca{
 	color: #ffffff;
 	text-align: center;
 	background-color: #3d4c58;
+
+}
+
+footer .marca .Logo {
+	color: #ffffff;
+}
+
+footer .marca .Logo span {
+	color: #ffffff;
 }
 
 @media screen and (max-width: 820px){
