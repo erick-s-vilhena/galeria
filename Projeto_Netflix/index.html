@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Projeto Netflix</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://kit.fontawesome.com/bd332a0e23.js" crossorigin="anonymous"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            xs: "480px"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script defer src="js/questions.js"></script>
+</head>
+<body class="min-h-screen bg-black text-white antialiased">
+  <main
+    class="relative px-[2%] bg-[url('img/banner.jpg')] bg-cover bg-center bg-no-repeat"
+  >
+    <div class="absolute inset-0 z-[5] bg-gradient-to-b from-black/80 via-black/50 to-black/80"></div>
+
+    <header class="relative z-10 w-full py-5">
+      <div class="mx-auto flex w-full max-w-[1100px] items-center justify-between">
+        <div class="w-[120px] sm:w-[160px]">
+          <!-- <img src="img/logo_netflix.png" alt="logo-netflix" class="block w-full" /> -->
+           <a class='flex items-center font-bold text-[40px]' href='./'>
+                <span class="text-[#E50914]"><</span>
+
+                <p class="text-white">ESV</p>
+
+                <span class="text-[#E50914]">/></span>
+            </a>
+        </div>
+
+        <div class="flex items-center">
+          <div
+            class="mr-3 flex h-[30px] w-[120px] items-center justify-center rounded border border-white bg-black/20 text-white sm:mr-5 sm:h-10"
+          >
+            <i class="fa-sharp fa-solid fa-globe"></i>
+            <select class="ml-1 bg-transparent text-sm text-white outline-none">
+              <option class="bg-black">Português</option>
+              <option class="bg-black">Inglês</option>
+              <option class="bg-black">Espanhol</option>
+              <option class="bg-black">Chinês</option>
+            </select>
+          </div>
+
+          <a
+            href="#"
+            class="flex h-[30px] w-20 items-center justify-center rounded bg-[#E50914] text-sm text-white transition hover:bg-[#ef0813] sm:ml-0 sm:h-10 sm:w-[100px]"
+          >
+            Entrar
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative z-10 w-full">
+      <div class="mx-auto w-full max-w-[1100px]">
+        <div class="mx-auto flex w-full max-w-[700px] flex-col py-[100px] text-center text-white sm:py-[140px]">
+          <h1 class="mb-5 text-[40px] font-bold leading-tight sm:text-[64px]">
+            Filmes, séries e muito mais. Sem limites.
+          </h1>
+
+          <h3 class="mb-5 text-2xl font-normal sm:text-[26px]">
+            Assista onde quiser. Cancele quando quiser.
+          </h3>
+
+          <p class="mb-5 text-base sm:text-[18px]">
+            Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+          </p>
+
+          <form class="flex flex-wrap">
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              class="w-full border border-[#555] px-[10px] py-[10px] text-base text-black outline-none sm:w-[calc(100%-200px)] sm:py-6"
+            />
+            <button
+              class="mx-auto mt-5 flex h-10 w-40 items-center justify-center gap-2 bg-[#E50914] text-lg text-white transition hover:bg-[#ef0813] sm:mt-0 sm:h-auto sm:w-[200px] sm:text-[28px]"
+            >
+              Vamos lá <i class="fa-solid fa-chevron-right text-base sm:text-xl"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="w-full border-t-[10px] border-t-[#222222] px-[2%]">
+    <div class="mx-auto w-full max-w-[1100px]">
+      <div class="flex flex-col items-center justify-between py-[50px] md:flex-row">
+        <div class="w-full text-white md:w-1/2">
+          <h1 class="mb-5 text-center text-[28px] font-bold sm:text-4xl md:text-left md:text-[50px]">
+            Aproveite na TV.
+          </h1>
+
+          <p class="mx-auto max-w-[600px] text-center text-base sm:text-[18px] md:mx-0 md:text-left md:text-2xl">
+            Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de
+            Blu-ray e outros dispositivos.
+          </p>
+        </div>
+
+        <div class="relative w-full max-w-[500px] p-5 md:w-1/2">
+          <img src="img/tv.png" alt="tv" class="relative z-10 block w-full" />
+
+          <video
+            class="absolute left-[16%] top-[22%] z-[5] w-[70%]"
+            autoplay
+            muted
+            loop
+          >
+            <source src="./img/video-tv-0819.m4v" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full border-t-[10px] border-t-[#222222] px-[2%]">
+    <div class="mx-auto w-full max-w-[1100px]">
+      <div class="flex flex-col-reverse items-center justify-between py-[50px] md:flex-row">
+        <div class="relative w-full max-w-[500px] p-5 md:w-1/2">
+          <img src="img/device-pile.png" alt="devices" class="relative z-10 block w-full" />
+
+          <video
+            class="absolute left-[20%] top-[14%] z-[5] w-[58%]"
+            autoplay
+            muted
+            loop
+          >
+            <source src="./img/video-devices.m4v" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="w-full text-white md:w-1/2">
+          <h1 class="mb-5 text-center text-[28px] font-bold sm:text-4xl md:text-left md:text-[50px]">
+            Assista quando quiser.
+          </h1>
+
+          <p class="mx-auto max-w-[600px] text-center text-base sm:text-[18px] md:mx-0 md:text-left md:text-2xl">
+            Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de
+            Blu-ray e outros dispositivos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full border-t-[10px] border-t-[#222222] px-[2%]">
+    <div class="mx-auto w-full max-w-[1100px]">
+      <div class="flex flex-col items-center justify-between py-[50px] md:flex-row">
+        <div class="w-full text-white md:w-1/2">
+          <h1 class="mb-5 text-center text-[28px] font-bold sm:text-4xl md:text-left md:text-[50px]">
+            Crie perfis para crianças.
+          </h1>
+
+          <p class="mx-auto max-w-[600px] text-center text-base sm:text-[18px] md:mx-0 md:text-left md:text-2xl">
+            Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de
+            Blu-ray e outros dispositivos.
+          </p>
+        </div>
+
+        <div class="relative w-full max-w-[500px] p-5 md:w-1/2">
+          <img src="img/child.png" alt="child" class="block w-full" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full border-y-[10px] border-[#222222] px-[2%]">
+    <div class="mx-auto w-full max-w-[1100px]">
+      <div class="flex flex-col-reverse items-center justify-between py-[50px] md:flex-row">
+        <div class="relative w-full max-w-[500px] p-5 md:w-1/2">
+          <img src="img/mobile.jpg" alt="mobile" class="block w-full" />
+
+          <div
+            class="relative left-0 bottom-0 z-[15] mx-auto mt-[-40px] flex w-full max-w-[300px] items-center rounded-[10px] border-2 border-[#222] bg-black p-[10px] sm:absolute sm:bottom-[16%] sm:left-[14%] sm:mt-0 sm:max-w-none sm:w-[70%]"
+          >
+            <img src="img/boxshot.png" alt="boxshot" class="w-[50px]" />
+
+            <div class="px-[10px]">
+              <h4 class="text-white">Stranger Things</h4>
+              <p class="text-[rgb(0,64,255)]">Download em andamento...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full text-white md:w-1/2">
+          <h1 class="mb-5 text-center text-[28px] font-bold sm:text-4xl md:text-left md:text-[50px]">
+            Baixe séries para assistir offline.
+          </h1>
+
+          <p class="mx-auto max-w-[600px] text-center text-base sm:text-[18px] md:mx-0 md:text-left md:text-2xl">
+            Disponíveis somente em planos sem anúncios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full px-[2%]">
+    <div class="mx-auto w-full max-w-[1100px]">
+      <div class="flex w-full flex-col items-center py-[50px] text-white">
+        <h1 class="mb-[30px] text-center text-[30px] font-bold sm:text-[40px] lg:text-[50px]">
+          Perguntas frequentes
+        </h1>
+
+        <ul class="w-full max-w-[800px] space-y-[10px]">
+          <li class="faq-item overflow-hidden bg-[#303030]">
+            <button
+              type="button"
+              class="faq-trigger flex w-full items-center justify-between px-[15px] py-[15px] text-left text-base sm:px-5 sm:py-4 sm:text-xl lg:text-[28px]"
+            >
+              <span>O que é Netflix?</span>
+              <i class="faq-icon fa-regular fa-plus mr-0 shrink-0 transition-transform duration-300 sm:mr-5"></i>
+            </button>
+
+            <div class="faq-content hidden border-t-2 border-t-black">
+              <div class="px-[15px] py-[15px] sm:px-5 sm:py-5">
+                <p class="text-sm sm:text-base lg:text-[24px]">
+                  A Netflix é um serviço de streaming que oferece uma ampla variedade de
+                  séries, filmes e documentários premiados em milhares de aparelhos
+                  conectados à internet.
+                  <br /><br />
+                  Você pode assistir a quantos filmes e séries quiser, quando e onde quiser
+                  – tudo por um preço mensal acessível. Aqui você sempre encontra
+                  novidades. A cada semana, adicionamos novas séries e filmes.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-item overflow-hidden bg-[#303030]">
+            <button
+              type="button"
+              class="faq-trigger flex w-full items-center justify-between px-[15px] py-[15px] text-left text-base sm:px-5 sm:py-4 sm:text-xl lg:text-[28px]"
+            >
+              <span>Quanto custa a Netflix?</span>
+              <i class="faq-icon fa-regular fa-plus mr-0 shrink-0 transition-transform duration-300 sm:mr-5"></i>
+            </button>
+
+            <div class="faq-content hidden border-t-2 border-t-black">
+              <div class="px-[15px] py-[15px] sm:px-5 sm:py-5">
+                <p class="text-sm sm:text-base lg:text-[24px]">
+                  Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho
+                  de streaming por uma taxa mensal única. Os planos variam de R$18,90 a
+                  R$55,90 por mês. Sem contrato nem taxas extras.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-item hidden overflow-hidden bg-[#303030] sm:block">
+            <button
+              type="button"
+              class="faq-trigger flex w-full items-center justify-between px-[15px] py-[15px] text-left text-base sm:px-5 sm:py-4 sm:text-xl lg:text-[28px]"
+            >
+              <span>Quais são as diferenças de um plano com anúncios?</span>
+              <i class="faq-icon fa-regular fa-plus mr-0 shrink-0 transition-transform duration-300 sm:mr-5"></i>
+            </button>
+
+            <div class="faq-content hidden border-t-2 border-t-black">
+              <div class="px-[15px] py-[15px] sm:px-5 sm:py-5">
+                <p class="text-sm sm:text-base lg:text-[24px]">
+                  Um plano com anúncios é uma excelente maneira de assistir a séries e
+                  filmes por um preço mais baixo. Você pode assistir ao seu conteúdo
+                  favorito com intervalos limitados para anúncios (sujeito a restrições de
+                  localização e aparelho). Este plano não permite fazer downloads e não
+                  inclui algumas séries e filmes com restrições de licenciamento. Saiba
+                  mais.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-item overflow-hidden bg-[#303030]">
+            <button
+              type="button"
+              class="faq-trigger flex w-full items-center justify-between px-[15px] py-[15px] text-left text-base sm:px-5 sm:py-4 sm:text-xl lg:text-[28px]"
+            >
+              <span>Onde posso assistir?</span>
+              <i class="faq-icon fa-regular fa-plus mr-0 shrink-0 transition-transform duration-300 sm:mr-5"></i>
+            </button>
+
+            <div class="faq-content hidden border-t-2 border-t-black">
+              <div class="px-[15px] py-[15px] sm:px-5 sm:py-5">
+                <p class="text-sm sm:text-base lg:text-[24px]">
+                  Assista onde quiser, quando quiser. Faça login com sua conta Netflix em
+                  netflix.com para começar a assistir no computador ou em qualquer aparelho
+                  conectado à Internet compatível com o aplicativo Netflix, como Smart TVs,
+                  smartphones, tablets, aparelhos de streaming e videogames.
+                  <br /><br />
+                  Você também pode baixar a sua série favorita com o aplicativo Netflix
+                  para iOS, Android ou Windows 10. Use downloads para levar a Netflix para
+                  onde quiser sem precisar de conexão com a Internet. Leve a Netflix com
+                  você para qualquer lugar.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-item overflow-hidden bg-[#303030]">
+            <button
+              type="button"
+              class="faq-trigger flex w-full items-center justify-between px-[15px] py-[15px] text-left text-base sm:px-5 sm:py-4 sm:text-xl lg:text-[28px]"
+            >
+              <span>Como faço para cancelar?</span>
+              <i class="faq-icon fa-regular fa-plus mr-0 shrink-0 transition-transform duration-300 sm:mr-5"></i>
+            </button>
+
+            <div class="faq-content hidden border-t-2 border-t-black">
+              <div class="px-[15px] py-[15px] sm:px-5 sm:py-5">
+                <p class="text-sm sm:text-base lg:text-[24px]">
+                  A Netflix é flexível. Não há contratos nem compromissos. Você pode
+                  cancelar a sua conta na internet com apenas dois cliques. Não há taxa de
+                  cancelamento – você pode começar ou encerrar a sua assinatura a qualquer
+                  momento.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-item overflow-hidden bg-[#303030]">
+            <button
+              type="button"
+              class="faq-trigger flex w-full items-center justify-between px-[15px] py-[15px] text-left text-base sm:px-5 sm:py-4 sm:text-xl lg:text-[28px]"
+            >
+              <span>O que eu posso assistir na Netflix?</span>
+              <i class="faq-icon fa-regular fa-plus mr-0 shrink-0 transition-transform duration-300 sm:mr-5"></i>
+            </button>
+
+            <div class="faq-content hidden border-t-2 border-t-black">
+              <div class="px-[15px] py-[15px] sm:px-5 sm:py-5">
+                <p class="text-sm sm:text-base lg:text-[24px]">
+                  A Netflix tem um grande catálogo de filmes, documentários, séries,
+                  originais Netflix premiados e muito mais. Assista o quanto quiser,
+                  quando quiser.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-item overflow-hidden bg-[#303030]">
+            <button
+              type="button"
+              class="faq-trigger flex w-full items-center justify-between px-[15px] py-[15px] text-left text-base sm:px-5 sm:py-4 sm:text-xl lg:text-[28px]"
+            >
+              <span>A Netflix é adequada para crianças?</span>
+              <i class="faq-icon fa-regular fa-plus mr-0 shrink-0 transition-transform duration-300 sm:mr-5"></i>
+            </button>
+
+            <div class="faq-content hidden border-t-2 border-t-black">
+              <div class="px-[15px] py-[15px] sm:px-5 sm:py-5">
+                <p class="text-sm sm:text-base lg:text-[24px]">
+                  A experiência infantil da Netflix faz parte da sua assinatura para que as
+                  crianças se divirtam em seu próprio espaço com séries e filmes familiares
+                  sob a supervisão dos responsáveis.
+                  <br /><br />
+                  O recurso de controle parental, incluso nos perfis para crianças e
+                  protegido por PIN, permite restringir a classificação etária do conteúdo
+                  que as crianças podem ver e bloquear títulos específicos que você não
+                  quer que elas assistam.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="my-[30px] text-center text-sm font-normal sm:text-base lg:text-[24px]">
+          Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+        </h3>
+
+        <form class="flex w-full max-w-[700px] flex-wrap">
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            class="w-full border border-[#555] px-[10px] py-[10px] text-base text-black outline-none sm:w-[calc(100%-200px)] sm:py-[14px] lg:py-6"
+          />
+          <button
+            class="mx-auto mt-5 flex h-10 w-40 items-center justify-center gap-2 bg-[#E50914] text-lg text-white transition hover:bg-[#ef0813] sm:mt-0 sm:h-auto sm:w-[200px] sm:text-[28px]"
+          >
+            Vamos lá <i class="fa-solid fa-chevron-right text-base sm:text-xl"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="w-full px-[2%]">
+    <div class="mx-auto w-full max-w-[1100px]">
+      <div class="flex w-full flex-wrap py-[50px] text-[#555]">
+        <h1 class="mb-[30px] w-full text-[18px] font-normal">
+          Dúvidas? Ligue 0800 591 8942
+        </h1>
+
+        <div class="mb-4 w-1/2 md:mb-0 md:w-1/4">
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Perguntas frequentes</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Relações com investidores</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Formas de assistir</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Informações corporativas</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Só na Netflix</a>
+        </div>
+
+        <div class="mb-4 w-1/2 md:mb-0 md:w-1/4">
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Central de Ajuda</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Carreiras</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Termos de Uso</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Entre em contato</a>
+        </div>
+
+        <div class="mb-4 w-1/2 md:mb-0 md:w-1/4">
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Conta</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Resgatar cartão pré-pago</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Privacidade</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Teste de velocidade</a>
+        </div>
+
+        <div class="mb-4 w-1/2 md:mb-0 md:w-1/4">
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Media Center</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Comprar cartão pré-pago</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Preferências de cookies</a>
+          <a href="#" class="mb-[15px] block text-[12px] xs:text-[14px] hover:underline">Avisos legais</a>
+        </div>
+
+        <div class="mt-5">
+          <div
+            class="mr-5 flex h-10 w-[120px] items-center justify-center rounded border border-white bg-black/20 text-white"
+          >
+            <i class="fa-sharp fa-solid fa-globe"></i>
+            <select class="ml-1 bg-transparent text-sm text-white outline-none">
+              <option class="bg-black">Português</option>
+              <option class="bg-black">Inglês</option>
+              <option class="bg-black">Espanhol</option>
+              <option class="bg-black">Chinês</option>
+            </select>
+          </div>
+
+          <p class="mt-5 text-[14px]">< ESV /></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
